@@ -1,23 +1,24 @@
-# Guardian Knot - C++ Security Application
+# Guardian Knot - C++ Personal Safety & Security Application
 
-Guardian Knot is a security application developed in C++ as a 2nd-semester computer programming project. It bridges the gap between software data encryption and real-world emergency logic.
+Guardian Knot is an automated personal safety system developed in C++ as a 2nd-semester computer programming project. It bridges the gap between software logic and real-world emergency response, acting as a digital "Dead Man's Switch" for user safety.
 
 ## 💡 What is the Core Idea? (Real-World Scenario)
-Imagine you have secure personal notes or passwords locked in an app. If someone forces you to open the app and enter your password, you are in a tough spot. 
+Imagine a user is traveling alone or working in a high-risk environment. If something happens to them (e.g., they get stranded or kidnapped), they won't be able to call for help. **Guardian Knot** solves this passively:
 
-This is where **Guardian Knot** comes in:
-1. **Normal Access:** If you enter your regular PIN, the app unlocks normally and decrypts your secure data safely.
-2. **Duress/Panic Access:** If you are forced to unlock the app under pressure, you enter a secret **Duress PIN**. The app pretends to work normally but secretly triggers an emergency response—it immediately wipes out/destroys the sensitive data files or encrypts them forever so no one can access them.
+1. **The 2-Day Safety Check (Dead Man's Switch):** The user must open the app and log a "Safety Tick" at least once every 2 days. 
+2. **The Passive Emergency Trigger:** If 2 days pass and the user *fails* to check in, the system automatically flags that the user is in danger and triggers an emergency routine to alert their configured relatives/guardians.
+3. **The Duress/Panic PIN:** If the user is forced by an attacker to unlock the app under pressure, they can enter a secret **Duress PIN**. The app pretends to function normally to keep the attacker calm, but secretly and immediately triggers an instant emergency alert to the relatives.
 
 ---
 
 ## 🚀 Key Features
-* **AES-Inspired Encryption:** Custom lightweight cryptographic logic to secure and scramble user data files.
-* **Duress PIN Mechanism:** A smart panic-trigger logic that executes data destruction routines if a specific distress PIN is entered.
-* **Data Privacy:** Engineered with secure memory management and input validation principles to prevent unauthorized access.
+* **Automated Safety Check-In:** Time-tracking logic that monitors user check-ins within a strict 48-hour window.
+* **Duress PIN Mechanism:** A smart panic-trigger logic that executes covert safety routines and distress flags under pressure.
+* **Emergency Contact Routing:** Logic designed to dispatch distress signals and user status to configured guardians during a breach or missing check-in.
+* **Data Privacy:** Custom encryption to ensure that the user's emergency contacts and personal logs remain secure.
 
 ---
 
 ## 🛠️ Tech Stack & Concepts
 * **Language:** C++
-* **Concepts Used:** Object-Oriented Programming (OOP), file handling (to read/write encrypted files), structures, and logical security frameworks.
+* **Concepts Used:** Object-Oriented Programming (OOP), File Handling (for tracking timestamps and storing secure contact logs), Time/Date manipulation logic, and conditional security frameworks.
